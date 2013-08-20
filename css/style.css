@@ -1,0 +1,12 @@
+body {
+  background-color: #333;
+}
+
+.header {
+  text-align: center;
+  background: url(/img/be-excellent.png) no-repeat center top;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 600px;
+}
