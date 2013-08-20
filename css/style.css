@@ -2,11 +2,19 @@ body {
   background-color: #333;
 }
 
-.header {
+.header, .calendar {
   text-align: center;
-  background: url(/img/be-excellent.png) no-repeat center top;
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
+}
+
+.header {
+  background: url(/img/be-excellent.png) no-repeat center top;
+  height: 400px;
+}
+
+.calendar {
+  background: url(/img/calendar.png) no-repeat center top;
   height: 600px;
 }
