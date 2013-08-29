@@ -1,20 +1,66 @@
+@font-face {
+  font-family: "The Sans Bold Plain";
+  src: url('/css/the-sans-bold-plain.otf');
+}
+
 body {
   background-color: #333;
+  color: #fff
 }
 
 .header, .calendar {
-  text-align: center;
-  text-indent: 100%;
+  display: inline-block;
+  width: 95%;
+  left: 2.5%;
+  position: relative;
+}
+
+.event-list {
+  width: 100%;
+  position: relative;
+  margin-left: -25px;
+  display: none;
+  margin-top: 10px;
+  list-style-type: none;
+  font-family: "The Sans Bold Plain", "Helvetica Neue", "Helvetica";
+  font-size: 1.1em;
+}
+
+.event-list li {
+  margin-top: 2px;
   white-space: nowrap;
-  overflow: hidden;
 }
 
-.header {
-  background: url(/img/be-excellent.png) no-repeat center top;
-  height: 400px;
+.event-name {
+  font-weight: bold;
 }
 
-.calendar {
-  background: url(/img/calendar.png) no-repeat center top;
-  height: 600px;
+.event-name.invite-only:after {
+  content: " \0394";
+  color: orange;
+}
+
+.event-date, .event-location {
+  font-size: 0.9em;
+}
+
+@media (max-width: 600px) {
+  .calendar {
+    display: none;
+  }
+
+  .event-list {
+    display: inline-block;
+  }
+
+  .contact {
+    display: none;
+  }
+}
+
+.contact {
+  font-family: "The Sans Bold Plain", "Helvetica Neue", "Helvetica";
+  font-size: 1.6em;
+  text-align: center;
+  margin-top: 10px;
 }
