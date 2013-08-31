@@ -8,7 +8,7 @@ body {
   color: #fff
 }
 
-.header, .calendar {
+.header, .calendar, .invite-only-notice {
   display: inline-block;
   width: 95%;
   left: 2.5%;
@@ -56,6 +56,14 @@ body {
   .contact {
     display: none;
   }
+}
+
+.invite-only-notice {
+  font-family: "The Sans Bold Plain", "Helvetica Neue", "Helvetica";
+}
+
+.invite-only-mark {
+  color: orange;
 }
 
 .contact {
