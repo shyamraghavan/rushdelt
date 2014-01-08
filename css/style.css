@@ -1,74 +1,26 @@
-@font-face {
-  font-family: "The Sans Bold Plain";
-  src: url('/css/the-sans-bold-plain.otf');
-}
-
 body {
-  background-color: #333;
-  color: #fff
+  background-color: #260940;
 }
 
-.header, .calendar, .invite-only-notice {
+.container {
+  max-width: 1170px !important;
+  width: 80%;
+}
+
+img {
+  max-width: 100%;
+}
+
+.header {
+  display: inline-block;
+  width: 80%;
+  left: 10%;
+  position: relative;
+}
+
+.calendar {
   display: inline-block;
   width: 95%;
   left: 2.5%;
   position: relative;
-}
-
-.event-list {
-  width: 100%;
-  position: relative;
-  margin-left: -25px;
-  display: none;
-  margin-top: 10px;
-  list-style-type: none;
-  font-family: "The Sans Bold Plain", "Helvetica Neue", "Helvetica";
-  font-size: 1.1em;
-}
-
-.event-list li {
-  margin-top: 2px;
-  white-space: nowrap;
-}
-
-.event-name {
-  font-weight: bold;
-}
-
-.event-name.invite-only:after {
-  content: " \0394";
-  color: orange;
-}
-
-.event-date, .event-location {
-  font-size: 0.9em;
-}
-
-@media (max-width: 600px) {
-  .calendar {
-    display: none;
-  }
-
-  .event-list {
-    display: inline-block;
-  }
-
-  .contact {
-    display: none;
-  }
-}
-
-.invite-only-notice {
-  font-family: "The Sans Bold Plain", "Helvetica Neue", "Helvetica";
-}
-
-.invite-only-mark {
-  color: orange;
-}
-
-.contact {
-  font-family: "The Sans Bold Plain", "Helvetica Neue", "Helvetica";
-  font-size: 1.6em;
-  text-align: center;
-  margin-top: 10px;
 }
