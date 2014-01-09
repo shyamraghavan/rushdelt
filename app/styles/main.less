@@ -1,0 +1,158 @@
+@import "../bower_components/bootstrap/less/bootstrap.less";
+@icon-font-path: "../fonts/glyphicons/";
+
+@font-face {
+  font-family: 'Vista Sans Black Italic';
+  src: url(VistaSansBlackItalic.ttf);
+}
+
+@font-face {
+  font-family: 'Vista Sans Light';
+  src: url(VistaSansLight.ttf);
+}
+
+@delt-gold: #FDB92E;
+@delt-purple: #260940;
+@heading-font: 'Vista Sans Black Italic';
+@body-font: 'Vista Sans Light';
+
+body {
+  background: @delt-purple;
+  color: @delt-gold;
+  font-family: @body-font;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: @heading-font;
+}
+
+.content {
+  margin-bottom: 100px;
+}
+
+.logo {
+  width: 100%;
+}
+
+.calendar {
+  position: relative;
+  top: -50px;
+  margin-bottom: 0;
+}
+
+.calendar-header {
+  margin: 0.5em 0 0.8em;
+}
+
+.invite-only-notice {
+  font-size: 8pt;
+  position: relative;
+  top: 0.3em;
+  left: 11%;
+
+  @media (max-width: @screen-xs-max) {
+    left: 0;
+    text-align: center;
+    font-size: 4pt;
+  }
+
+  @media (max-width: @screen-sm-max) {
+    top: 0.4em;
+  }
+}
+
+.double-rule {
+  width: 100%;
+  position: relative;
+  text-align: left;
+  border-bottom: 2px solid @delt-gold;
+  line-height: 0.1em;
+  padding-left: 9%;
+  font-size: 24pt;
+
+  @media (max-width: @screen-xs-max) {
+    font-size: 14pt;
+    text-align: center;
+    padding-left: 0;
+    margin-top: 2em;
+  }
+
+  span {
+    position: relative;
+    top: 1px;
+    background: @delt-purple;
+    padding: 0px 15px;
+    text-transform: uppercase;
+  }
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -4px;
+    left: 0px;
+    width: 100%;
+    line-height: 0.1em;
+    border-bottom: 2px solid @delt-gold;
+    min-height: 100%;
+  }
+}
+
+.calendar-image {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.information {
+  width: 95%;
+  margin-left: 2.5%;
+
+  h3 {
+    margin-bottom: 4pt;
+  }
+
+  p {
+    font-size: 8pt;
+    margin-bottom: 3px;
+  }
+}
+
+.links {
+  margin-top: 2em;
+  margin-left: 10%;
+  width: 80%;
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    letter-spacing: 1.3em;
+  }
+
+  li {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    background-size: contain;
+  }
+
+  @media (max-width: @screen-xs-max) {
+    margin-left: 0;
+    text-align: center;
+    width: 100%;
+
+    ul {
+    }
+  }
+
+  .facebook {
+    background-image: url(../images/facebook-logo.png);
+  }
+
+  .twitter {
+    background-image: url(../images/twitter-logo.png);
+  }
+
+  .email {
+    background-image: url(../images/email-logo.png);
+  }
+}
