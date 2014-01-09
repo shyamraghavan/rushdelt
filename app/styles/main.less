@@ -133,15 +133,22 @@ h1, h2, h3, h4, h5, h6 {
     height: 100px;
     width: 100px;
     background-size: contain;
+
+    a {
+      display: block;
+      height: 100px;
+      width: 100px;
+
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+    }
   }
 
   @media (max-width: @screen-xs-max) {
     margin-left: 0;
     text-align: center;
     width: 100%;
-
-    ul {
-    }
   }
 
   .facebook {

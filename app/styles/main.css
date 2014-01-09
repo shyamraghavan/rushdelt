@@ -6073,6 +6073,14 @@ h6 {
   width: 100px;
   background-size: contain;
 }
+.links li a {
+  display: block;
+  height: 100px;
+  width: 100px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
 @media (max-width: 767px) {
   .links {
     margin-left: 0;
