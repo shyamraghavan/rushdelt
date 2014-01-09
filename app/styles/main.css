@@ -5956,11 +5956,11 @@ td.visible-print {
 }
 @font-face {
   font-family: 'Vista Sans Black Italic';
-  src: url(VistaSansBlackItalic.ttf);
+  src: url(fonts/VistaSansBlackItalic.ttf);
 }
 @font-face {
   font-family: 'Vista Sans Light';
-  src: url(VistaSansLight.ttf);
+  src: url(fonts/VistaSansLight.ttf);
 }
 body {
   background: #260940;
