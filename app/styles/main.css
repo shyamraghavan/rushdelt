@@ -5974,6 +5974,10 @@ td.visible-print {
   font-family: 'Vista Sans Med';
   src: url(fonts/VistaSansMed.ttf);
 }
+body,
+html {
+  overflow-x: hidden;
+}
 body {
   background: #260940;
   color: #fdb92e;
