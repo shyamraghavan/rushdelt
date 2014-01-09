@@ -17,7 +17,10 @@
   </head>
   <body>
     <div class="container content">
-      <img class="logo" alt="be excellent" src="images/rush-s14-logo.png" />
+      <span data-picture class="logo" data-alt="be excellent">
+        <span data-src="images/rush-s14-logo.png" ></span>
+        <span data-src="images/rush-s14-logo-small.png" data-media="(max-width: 767px)"></span>
+      </span>
 
       <div class="calendar row hidden-xs">
         <div class="calendar-header">
@@ -85,6 +88,7 @@
 
     <!-- build:js scripts/main.js -->
     <script src="bower_components/jquery/jquery.js"></script>
+    <script src="bower_components/picturefill/picturefill.js"></script>
     <!-- endbuild -->
 
     <!-- build:js scripts/vendor/bootstrap.js -->
